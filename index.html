@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Política de Privacidade — GymTracker</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0b0b0d;
+    --surface: #161618;
+    --border: #262628;
+    --text: #f2f2f2;
+    --text-muted: #a3a3a8;
+    --accent: #ef4444;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f7f8;
+      --surface: #ffffff;
+      --border: #e5e5e8;
+      --text: #17171a;
+      --text-muted: #55555c;
+      --accent: #dc2626;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 20px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .updated {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 40px 0 12px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .card p:last-child { margin-bottom: 0; }
+  .badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    border-radius: 999px;
+    padding: 3px 10px;
+    margin-bottom: 8px;
+  }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Política de Privacidade do GymTracker</h1>
+  <div class="updated">Última atualização: 1 de agosto de 2026</div>
+</header>
+
+<p>
+  Esta política explica que dados o GymTracker recolhe, para que servem, e onde ficam guardados.
+  Escrevemo-la para ser lida por qualquer pessoa, não só por advogados — se algo não estiver claro,
+  contacta-nos através do endereço no final da página.
+</p>
+
+<p>
+  <strong>Resumo em uma frase:</strong> o GymTracker guarda os teus dados de treino e saúde
+  <em>no teu próprio dispositivo</em>; nunca os enviamos para os nossos servidores, porque não temos
+  nenhum servidor — a única cópia fora do telemóvel é a que tu próprio decides fazer para a tua conta
+  pessoal do Google Drive.
+</p>
+
+<h2>1. Quem somos</h2>
+<p>
+  O GymTracker é uma aplicação de treino e saúde desenvolvida de forma independente. Não pertencemos
+  a nenhuma empresa de publicidade ou análise de dados, e a aplicação não tem modelo de negócio
+  baseado em anúncios.
+</p>
+
+<h2>2. Que dados recolhemos e para quê</h2>
+
+<div class="card">
+  <div class="badge">Local · Google Health Connect</div>
+  <h3>Dados de saúde e atividade física</h3>
+  <p>
+    Se ligares o Health Connect nas Definições, a app lê — apenas lê, nunca escreve — frequência
+    cardíaca, sono, calorias ativas, passos, distância, peso e percentagem de gordura corporal que o
+    teu relógio, pulseira ou balança inteligente já tenham enviado para o Health Connect. Usamos isto
+    para calcular pontuações de sono/recuperação e mostrar tendências nos teus treinos. Health Connect
+    é opcional em qualquer altura pode ser desligado nas Definições.
+  </p>
+</div>
+
+<div class="card">
+  <div class="badge">Local</div>
+  <h3>Dados de treino</h3>
+  <p>
+    Exercícios, séries, repetições, cargas, planos de treino, medidas corporais e histórico — tudo o
+    que introduzes manualmente na app. Fica guardado numa base de dados local no teu telemóvel.
+  </p>
+</div>
+
+<div class="card">
+  <div class="badge">Processado no dispositivo</div>
+  <h3>Fotografias</h3>
+  <p>
+    A câmara é usada para (a) definires uma foto de perfil e (b) reconhecimento de texto (OCR) para
+    importar exercícios a partir de uma fotografia. O reconhecimento de texto corre inteiramente no
+    teu telemóvel (Google ML Kit on-device) — nenhuma imagem é enviada para nós ou para qualquer
+    servidor externo.
+  </p>
+</div>
+
+<div class="card">
+  <div class="badge">Opcional · Conta Google</div>
+  <h3>Cópia de segurança no Google Drive</h3>
+  <p>
+    Se escolheres ligar a tua conta Google, podes fazer uma cópia de segurança dos teus dados de
+    treino para a <strong>tua própria conta</strong> do Google Drive. Só pedimos acesso aos ficheiros
+    que a própria app cria lá (permissão <code>drive.file</code>) — nunca vemos nem acedemos ao resto
+    do teu Drive. Esta cópia de segurança é só tua; não temos acesso a ela.
+  </p>
+</div>
+
+<div class="card">
+  <div class="badge">Opcional</div>
+  <h3>Ligação ao Spotify</h3>
+  <p>
+    Se ligares a tua conta Spotify, a app pode mostrar e controlar a reprodução de música durante o
+    treino (pausar, avançar, ver a música atual). Não recolhemos nem guardamos o teu histórico de
+    audição.
+  </p>
+</div>
+
+<div class="card">
+  <div class="badge">Opcional · Sensível</div>
+  <h3>Ciclo menstrual</h3>
+  <p>
+    Se usares o acompanhamento de ciclo, os registos (datas, sintomas, fluxo) ficam guardados
+    localmente da mesma forma que os restantes dados de treino — nunca são enviados para fora do
+    dispositivo a não ser que ativamente incluas essa cópia de segurança no Drive.
+  </p>
+</div>
+
+<div class="card">
+  <div class="badge">Local · Nunca em texto simples</div>
+  <h3>PIN de bloqueio da app</h3>
+  <p>
+    Se definires um PIN para bloquear a app, guardamos apenas uma versão encriptada (hash) dele —
+    nunca o número em si — e é excluído das cópias de segurança.
+  </p>
+</div>
+
+<h2>3. O que NÃO fazemos</h2>
+<ul>
+  <li>Não temos servidores próprios onde os teus dados de treino ou saúde sejam guardados.</li>
+  <li>Não vendemos, alugamos nem partilhamos os teus dados com empresas de publicidade.</li>
+  <li>Não usamos ferramentas de análise de comportamento ou publicidade de terceiros.</li>
+  <li>Não lemos nem enviamos as tuas fotos para fora do telemóvel.</li>
+</ul>
+
+<h2>4. Notificações</h2>
+<p>
+  Os lembretes (beber água, registar peso, descanso, treino) são gerados e agendados inteiramente no
+  teu telemóvel — não passam por nenhum servidor de notificações externo.
+</p>
+
+<h2>5. Os teus direitos e controlo</h2>
+<ul>
+  <li>Podes desligar o Health Connect, o Google Drive ou o Spotify a qualquer momento nas Definições.</li>
+  <li>Podes apagar qualquer registo individual (treino, medição, etc.) diretamente na app.</li>
+  <li>Podes repor a base de dados por completo em Definições → Dados → Repor Base de Dados.</li>
+  <li>Desinstalar a app remove todos os dados guardados localmente no dispositivo.</li>
+</ul>
+
+<h2>6. Menores de idade</h2>
+<p>
+  O GymTracker não se destina especificamente a crianças e não recolhemos, com conhecimento, dados de
+  menores de 13 anos.
+</p>
+
+<h2>7. Alterações a esta política</h2>
+<p>
+  Se esta política mudar de forma relevante, a data de "última atualização" no topo desta página será
+  atualizada.
+</p>
+
+<h2>8. Contacto</h2>
+<p>
+  Para questões sobre privacidade ou pedidos relacionados com os teus dados, escreve para
+  <a href="mailto:f.s.a.t96@gmail.com">f.s.a.t96@gmail.com</a>.
+</p>
+
+<footer>
+  GymTracker — Política de Privacidade
+</footer>
+
+</div>
+</body>
+</html>
