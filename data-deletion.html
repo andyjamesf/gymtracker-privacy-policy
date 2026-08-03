@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eliminação de Dados — GymTracker</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #0b0b0d;
+    --surface: #161618;
+    --border: #262628;
+    --text: #f2f2f2;
+    --text-muted: #a3a3a8;
+    --accent: #ef4444;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f7f7f8;
+      --surface: #ffffff;
+      --border: #e5e5e8;
+      --text: #17171a;
+      --text-muted: #55555c;
+      --accent: #dc2626;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 20px 96px;
+  }
+  header {
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 800;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  .updated {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 40px 0 12px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .card h3 {
+    margin: 0 0 6px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .card p:last-child, .card ol:last-child { margin-bottom: 0; }
+  .badge {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    border-radius: 999px;
+    padding: 3px 10px;
+    margin-bottom: 8px;
+  }
+  a { color: var(--accent); }
+  code {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1px 6px;
+    font-size: 0.92em;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Eliminação de Dados do GymTracker</h1>
+  <div class="updated">Última atualização: 4 de agosto de 2026</div>
+</header>
+
+<p>
+  O GymTracker (aplicação desenvolvida de forma independente) <strong>não tem servidores próprios nem
+  contas de utilizador geridas por nós</strong> — não existe "conta GymTracker" para pedir que seja
+  apagada, porque nunca guardamos os teus dados do nosso lado. Toda a informação de treino e saúde fica
+  apenas no teu telemóvel, e a única cópia fora dele é a que tu próprio decidires guardar na tua conta
+  pessoal do Google Drive.
+</p>
+
+<p>
+  Por isso, eliminar os teus dados é algo que fazes diretamente — não precisas de nos contactar nem de
+  esperar por nós. Os passos abaixo cobrem tudo o que a app guarda.
+</p>
+
+<h2>Como apagar os teus dados</h2>
+
+<div class="card">
+  <div class="badge">Imediato</div>
+  <h3>Apagar registos individuais</h3>
+  <p>
+    Dentro da app, qualquer treino, medição corporal, ou registo de ciclo pode ser apagado
+    individualmente, diretamente no ecrã onde aparece (ícone de lixo / opção "Eliminar").
+  </p>
+</div>
+
+<div class="card">
+  <div class="badge">Imediato</div>
+  <h3>Apagar tudo de uma vez</h3>
+  <ol>
+    <li>Abre o GymTracker</li>
+    <li>Vai a <strong>Perfil → ⚙️ Definições → Dados</strong></li>
+    <li>Toca em <strong>"Repor Base de Dados"</strong> e confirma</li>
+  </ol>
+  <p>
+    Isto apaga permanentemente todos os treinos, medições, planos, conquistas e definições guardadas no
+    telemóvel. Não pode ser desfeito.
+  </p>
+</div>
+
+<div class="card">
+  <div class="badge">Imediato</div>
+  <h3>Desinstalar a app</h3>
+  <p>
+    Desinstalar o GymTracker do teu telemóvel remove imediatamente toda a base de dados local — o
+    sistema Android apaga a pasta de dados da app por completo.
+  </p>
+</div>
+
+<h2>Contas ligadas (Google Drive e Spotify)</h2>
+
+<div class="card">
+  <div class="badge">Opcional</div>
+  <h3>Google Drive</h3>
+  <p>
+    A cópia de segurança fica na <strong>tua própria conta</strong> Google Drive, numa pasta chamada
+    <code>GymTracker</code>. Para a remover:
+  </p>
+  <ol>
+    <li>Na app: Definições → Google Drive → "Desligar Google Drive" (para deixar de sincronizar)</li>
+    <li>No Drive: abre <a href="https://drive.google.com" target="_blank" rel="noopener">drive.google.com</a>, entra na pasta <code>GymTracker</code> e apaga-a — os ficheiros são teus, só tu os controlas</li>
+    <li>Para revogar por completo o acesso da app à tua conta Google: <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a></li>
+  </ol>
+</div>
+
+<div class="card">
+  <div class="badge">Opcional</div>
+  <h3>Spotify</h3>
+  <p>
+    A ligação ao Spotify só é usada para mostrar/controlar a música durante o treino — não guardamos
+    histórico de audição. Para desligar:
+  </p>
+  <ol>
+    <li>Na app: Perfil → "Desligar Spotify"</li>
+    <li>Para revogar por completo: <a href="https://www.spotify.com/account/apps/" target="_blank" rel="noopener">spotify.com/account/apps</a></li>
+  </ol>
+</div>
+
+<h2>O que fica e o que é apagado</h2>
+<ul>
+  <li><strong>Dados locais</strong> (treinos, medições, conquistas, PIN em hash): apagados imediatamente ao repores a base de dados ou desinstalares a app — sem período de retenção, porque nunca saem do teu telemóvel.</li>
+  <li><strong>Cópia no Google Drive</strong>: só existe se a tiveres criado, fica na tua conta indefinidamente até a apagares tu mesmo (não temos acesso para a apagar por ti).</li>
+  <li><strong>Tokens de sessão do Google/Spotify</strong>: guardados encriptados no telemóvel (Android Keystore), removidos ao desligares a conta ou ao repores/desinstalares a app.</li>
+</ul>
+
+<h2>Contacto</h2>
+<p>
+  Se precisares de ajuda com qualquer um destes passos, escreve para
+  <a href="mailto:f.s.a.t96@gmail.com">f.s.a.t96@gmail.com</a>.
+</p>
+
+<p>
+  Para mais detalhes sobre que dados a app acede e porquê, consulta a
+  <a href="./">Política de Privacidade</a>.
+</p>
+
+<footer>
+  GymTracker — Eliminação de Dados
+</footer>
+
+</div>
+</body>
+</html>
